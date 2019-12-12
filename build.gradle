@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'pl.com.bottega'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 13
+targetCompatibility = 13
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation('org.junit.jupiter:junit-jupiter-api:5.5.2')
+    testRuntime('org.junit.jupiter:junit-jupiter-engine:5.5.2')
+    testCompile group: 'org.assertj', name: 'assertj-core', version: '3.6.1'
+    testCompile group: 'org.mockito', name: 'mockito-core', version: '2.1.0'
+}
+
+test {
+    useJUnitPlatform()
+}
