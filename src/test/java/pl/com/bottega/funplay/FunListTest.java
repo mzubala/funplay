@@ -120,7 +120,7 @@ class FunListTest {
         var list = FunList.of(1, 2, 3, 4);
 
         assertThat(list.filter(i -> i % 2 == 0)).isEqualTo(FunList.of(2, 4));
-        assertThat(list.filter(i -> false)).isEqualTo(Optional.empty());
+        assertThat(list.filter(i -> false)).isEqualTo(FunList.empty());
         assertThat(list.filter(i -> true)).isEqualTo(list);
     }
 
