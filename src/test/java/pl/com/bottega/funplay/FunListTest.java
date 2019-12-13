@@ -87,7 +87,7 @@ class FunListTest {
         assertThat(
             FunList.empty().concat(FunList.empty())
         ).isEqualTo(
-            FunList.of(1, 2, 3)
+            FunList.empty()
         );
     }
 
